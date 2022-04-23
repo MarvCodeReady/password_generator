@@ -8,3 +8,10 @@ Numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 special_characters = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 #lists of characters, numbers, and letters for password generator
+
+print('Hello Welcolme to the password genrerator.')
+
+q_letters= int(input("How many letters would you like in your password?\n")) 
+q_special_characters = int(input(f"How many symbols would you like?\n"))
+q_numbers = int(input(f"How many numbers would you like?\n"))
+#ask user for input on prefered password length
