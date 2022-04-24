@@ -19,7 +19,7 @@ q_numbers = int(input(f"How many numbers would you like?\n"))
 password = ""
 #this is where the password will be stored
 
-for x in range(1, q_letters):
+for x in range(1, q_letters + 1):
     password += random.choice(Letters)
 #for loop that grabs a random letter the amount of times a user prefers
 # ex. if a user wants three letters the loop will randomize three letters and store it into the variable password
@@ -32,3 +32,9 @@ for x in range(1, q_numbers + 1):
     password += random.choice(Numbers)
 #for loop that grabs a random number the amount of time a user prefers
 
+shuffled_password = list(password)
+
+random.shuffle(shuffled_password)
+#turn the variable password to a list and use random.shuffle() to shuffle the password
+print(''.join(shuffled_password))
+#return to user the final shuffled password
