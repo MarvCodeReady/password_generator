@@ -15,3 +15,20 @@ q_letters= int(input("How many letters would you like in your password?\n"))
 q_special_characters = int(input(f"How many symbols would you like?\n"))
 q_numbers = int(input(f"How many numbers would you like?\n"))
 #ask user for input on prefered password length
+
+password = ""
+#this is where the password will be stored
+
+for x in range(1, q_letters):
+    password += random.choice(Letters)
+#for loop that grabs a random letter the amount of times a user prefers
+# ex. if a user wants three letters the loop will randomize three letters and store it into the variable password
+
+for x in range(1, q_special_characters + 1):
+    password += random.choice(special_characters)
+#for loop that grabs random symbols the amount of times a user prefers
+
+for x in range(1, q_numbers + 1):
+    password += random.choice(Numbers)
+#for loop that grabs a random number the amount of time a user prefers
+
